@@ -1,0 +1,81 @@
+i {
+  cursor: pointer;
+}
+.row.equal-cols {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.row.equal-cols:before,
+.row.equal-cols:after {
+  display: block;
+}
+
+.row.equal-cols > [class*="col-"] {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.row.equal-cols > [class*="col-"] > * {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+body {
+  background-color: #3b3b98;
+}
+.main{
+  padding: 10px;
+  padding-top: 70px;
+}
+.modal-content {
+  background-color: #3b3b98;
+  color: #ffffff;
+}
+.card {
+  color: #ffffff;
+  background-color: #1b1464;
+}
+.notes {
+  display: flex;
+  justify-content: center;
+}
+.addnotes {
+  width: 30%;
+  margin: 10px;
+}
+.allnotes {
+  width: 60%;
+  margin: 10px;
+}
+.login {
+  width: 40%;
+}
+.signup {
+  width: 40%;
+}
+@media only screen and (max-width: 700px) {
+  .main{
+    padding: 20px;
+    padding-top: 70px;
+  }
+  .notes {
+    display: block;
+    width: 100%;
+  }
+  .addnotes,
+  .allnotes,  
+  .login,
+  .signup {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
